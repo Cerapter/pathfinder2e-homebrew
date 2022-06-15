@@ -15,6 +15,6 @@
             "type": "Item"
         }
     ],
-    "manifest": "https://gitlab.com/encounterlibrary/my-content-module/-/raw/main/module.json",
-    "download": "https://gitlab.com/encounterlibrary/my-content-module/-/raw/main/my-content-module.zip"
+    "manifest": "https://raw.githubusercontent.com/Cerapter/pathfinder2e-homebrew/main/module.json",
+    "download": "https://raw.githubusercontent.com/Cerapter/pathfinder2e-homebrew/main/cerapter-homebrew.zip"
 }
