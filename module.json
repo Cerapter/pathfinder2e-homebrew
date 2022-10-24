@@ -2,17 +2,39 @@
     "name": "cerapter-homebrew",
     "title": "Cerapter's Homebrew",
     "description": "Mostly for myself, and mostly for convenience.",
-    "version": "1.0.0",
-    "author": "Cerapter",
-    "minimumCoreVersion": "0.8.6",
-    "compatibleCoreVersion": "9",
+    "version": "1.2.0",
+    "authors": [
+        {
+            "name": "Cerapter",
+            "discord": "Cerapter#2415"
+        }
+    ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "pf2e",
+                "type": "system",
+                "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+                "compatibility": {
+                    "minimum": "4.2.6"
+                }
+            }
+        ]
+    },
+    "compatibility": {
+        "minimum": "10.288",
+        "verified": "10.288"
+    },
     "packs": [
         {
+            "label": "[CER] Simple Homebrew",
+            "type": "Item",
             "name": "simple-homebrew",
-            "label": "Simple Homebrew",
             "path": "./packs/simple-homebrew.db",
             "entity": "Item",
-            "type": "Item"
+            "system": "pf2e",
+            "package": "cerapter-homebrew",
+            "private": false
         }
     ],
     "manifest": "https://raw.githubusercontent.com/Cerapter/pathfinder2e-homebrew/main/module.json",
