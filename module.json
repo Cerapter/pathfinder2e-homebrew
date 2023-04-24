@@ -1,42 +1,52 @@
 {
-    "name": "cerapter-homebrew",
-    "title": "Cerapter's Homebrew",
-    "description": "Mostly for myself, and mostly for convenience.",
-    "version": "1.2.0",
-    "authors": [
-        {
-            "name": "Cerapter",
-            "discord": "Cerapter#2415"
+  "id": "cerapter-homebrew",
+  "title": "Cerapter's Homebrew",
+  "description": "Mostly for myself, and mostly for convenience.",
+  "version": "1.3.0",
+  "authors": [
+    {
+      "name": "Cerapter",
+      "discord": "Cerapter#2415",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "10.291",
+    "verified": "10.291"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "4.9.0",
+          "verified": "4.10.4"
         }
-    ],
-    "relationships": {
-        "systems": [
-            {
-                "id": "pf2e",
-                "type": "system",
-                "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
-                "compatibility": {
-                    "minimum": "4.2.6"
-                }
-            }
-        ]
+      }
+    ]
+  },
+  "packs": [
+    {
+      "label": "[CER] Simple Homebrew",
+      "type": "Item",
+      "name": "simple-homebrew",
+      "path": "packs/simple-homebrew.db",
+      "system": "pf2e",
+      "private": false,
+      "package": "cerapter-homebrew",
+      "flags": {}
     },
-    "compatibility": {
-        "minimum": "10.288",
-        "verified": "10.288"
-    },
-    "packs": [
-        {
-            "label": "[CER] Simple Homebrew",
-            "type": "Item",
-            "name": "simple-homebrew",
-            "path": "./packs/simple-homebrew.db",
-            "entity": "Item",
-            "system": "pf2e",
-            "package": "cerapter-homebrew",
-            "private": false
-        }
-    ],
-    "manifest": "https://raw.githubusercontent.com/Cerapter/pathfinder2e-homebrew/main/module.json",
-    "download": "https://raw.githubusercontent.com/Cerapter/pathfinder2e-homebrew/main/cerapter-homebrew.zip"
+    {
+      "label": "[CER] AJ Neuro's Designs - Variants Cantrips",
+      "type": "Item",
+      "name": "aj-neuro-variant-cantrips",
+      "path": "packs/aj-neuro-variant-cantrips.db",
+      "system": "pf2e",
+      "private": false,
+      "package": "cerapter-homebrew",
+      "flags": {}
+    }
+  ]
 }
