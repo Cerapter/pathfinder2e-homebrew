@@ -2,7 +2,7 @@
   "id": "cerapter-homebrew",
   "title": "Cerapter's Homebrew",
   "description": "Mostly for myself, and mostly for convenience.",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "manifest": "https://raw.githubusercontent.com/Cerapter/pathfinder2e-homebrew/main/module.json",
   "download": "https://raw.githubusercontent.com/Cerapter/pathfinder2e-homebrew/main/cerapter-homebrew.zip",
   "authors": [
